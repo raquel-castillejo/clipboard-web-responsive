@@ -1,0 +1,331 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  background-color: hsl(201, 11%, 66%);
+}
+
+body {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: "Bai Jamjuree", sans-serif;
+  background-color: #fff;
+}
+
+a {
+  /* reset */
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  /* reset */
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+}
+
+/* GENERAL */
+/* ******* */
+
+.main {
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+}
+
+.keep-track-snippets,
+.access-clipboard,
+.supercharge-workflow {
+  margin-bottom: 4rem;
+}
+
+/* TEXTS */
+/* ***** */
+
+.title,
+.txt {
+  text-align: center;
+}
+
+.title {
+  color: hsl(210, 10%, 33%);
+}
+
+.txt {
+  color: hsl(201, 11%, 66%);
+  line-height: 1.5;
+
+  margin-bottom: 3rem;
+
+  /* límites de ancho para desktop */
+  max-width: 38rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* HEADER */
+/* ****** */
+
+.header {
+  padding: 120px 1rem;
+
+  background: url(../assets/images/bg-header-mobile.png) no-repeat top left 100%;
+}
+
+@media screen and (min-width: 980px) {
+  .header {
+    padding: 120px 1rem;
+
+    background: url(../assets/images/bg-header-desktop.png) no-repeat top left
+      100%;
+  }
+}
+
+.header__logo {
+  max-width: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+
+.header__title {
+  font-size: 1.8rem;
+}
+
+@media screen and (min-width: 980px) {
+  .header__title {
+    font-size: 2.3rem;
+  }
+
+  .header__txt {
+    margin-bottom: 2rem;
+  }
+}
+
+/* buttons */
+/* ******* */
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media screen and (min-width: 980px) {
+  .buttons-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+.button {
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+
+  display: block;
+  padding: 0.7rem;
+
+  background-color: hsl(171, 66%, 44%);
+  border-radius: 3rem;
+  box-shadow: 0 3px hsl(171, 66%, 30%);
+}
+
+.button:hover {
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 980px) {
+  .button {
+    padding: 0.7rem 2rem;
+  }
+}
+
+.button--mac {
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: 0 3px hsl(233, 100%, 54%);
+}
+
+/* KEEP TRACK OF YOUR SNIPPETS */
+
+.snippets-options {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 980px) {
+  .snippets-options {
+    flex-direction: row;
+  }
+
+  .snippets-options__img,
+  .snippets-options-texts {
+    width: 50%;
+  }
+
+  .snippets-options__img {
+    position: relative;
+    left: -100px;
+  }
+}
+
+.snippets-options__title {
+  margin-bottom: 0;
+}
+
+.snippets-options__txt {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 980px) {
+  .snippets-options__title,
+  .snippets-options__txt {
+    text-align: left;
+    max-width: 22rem;
+  }
+
+  .snippets-options__txt {
+    margin-left: 0;
+  }
+}
+
+/* ACCESS CLIPBOARD ANYWHERE */
+
+.access-clipboard__img {
+  /* límites de ancho para desktop */
+  max-width: 45rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* SUPERCHARGE YOUR WORKFLOW */
+
+@media screen and (min-width: 980px) {
+  .workflow-options {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+
+  .workflow-single-option {
+    max-width: 20rem;
+  }
+}
+
+.workflow-single-option__img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* COMPANIES */
+
+.companies {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+
+  margin-bottom: 8rem;
+}
+
+@media screen and (min-width: 980px) {
+  .companies {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+.companies__img {
+  height: 2rem;
+  width: auto;
+}
+
+/* CLIPBOARD FOR IOS AND MACOS */
+
+.download-clipboard {
+  margin-bottom: 8rem;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: hsl(201, 11%, 96%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 2rem;
+
+  padding: 3rem;
+}
+
+@media screen and (min-width: 980px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    padding: 2rem 3rem;
+  }
+}
+
+.footer__logo {
+  max-width: 60px;
+}
+
+.footer-nav {
+  text-align: center;
+}
+
+@media screen and (min-width: 980px) {
+  .footer-nav {
+    width: 50%;
+    text-align: left;
+  }
+
+  .footer-nav__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 5rem;
+
+    margin-top: 1.5rem; /* para compensar el margin-bottom de los li y que la lista quede centrada verticalmente */
+  }
+}
+
+.footer-nav__list-item {
+  margin-bottom: 1.5rem;
+}
+
+.footer-nav__list-item:hover {
+  color: hsl(171, 66%, 44%);
+}
+
+@media screen and (min-width: 980px) {
+  .footer-nav__list-item {
+    width: 10rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.rrss {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
